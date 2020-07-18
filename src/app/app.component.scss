@@ -1,0 +1,29 @@
+table.table-style-three {
+  font-family: verdana, arial, sans-serif;
+  font-size: 11px;
+  color: #333333;
+  border-width: 1px;
+  border-color: #3a3a3a;
+  border-collapse: collapse;
+}
+table.table-style-three th {
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #ffa6a6;
+  background-color: #d56a6a;
+  color: #ffffff;
+}
+table.table-style-three tr:hover td {
+  cursor: pointer;
+}
+table.table-style-three tr:nth-child(even) td {
+  background-color: #f7cfcf;
+}
+table.table-style-three td {
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #ffa6a6;
+  background-color: #ffffff;
+}

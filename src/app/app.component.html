@@ -1,3 +1,29 @@
+<!-- <ol>
+  <li *ngFor="let blob of blobs">{{ blob.name }}</li>
+</ol> -->
+<table class="table-style-three">
+  <thead>
+    <tr>
+      <th>FileName</th>
+      <th>FileSize</th>
+      <th>ModifiedOn</th>
+      <th>Download</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let blob of blobs">
+      <td>{{ blob.name }}</td>
+      <td>{{ blob.properties.contentLength }}</td>
+      <td>{{ blob.properties.lastModified }}</td>
+      <td> <a href="https://kblob.blob.core.windows.net/images/{{blob.name}}">Download</a> </td>
+      <td> <a href="#" (click)="delete(blob)">Delete</a> </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
 <div class="form-group">
   <label for="file">Choose File</label>
   <input type="file" id="file" (change)="onFileChange($event)">
