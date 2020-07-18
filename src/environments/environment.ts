@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  accountName: 'kblob',
+  containerName: 'images',
+  // key: 's4pVydmkBmbLNt6Gf1U8KiLVG4eS6Q5C/uCkrgr95bo=',
+  key:
+    '069cfmn6xyRNros5/PCIdDuV+XYgkZiELcYhZ5+Adtj5VDwNH8yMk+Zw+8wLoDMB5wyALWHoinp6/Sp97qrsPQ==',
 };
 
 /*
